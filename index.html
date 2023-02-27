@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desperta</title>
+</head>
+<body>
+  <header>
+    <div id="nav-options">
+      <nav>
+        <a id="nav-opt" href="">Objetivo</a>
+        <a id="nav-opt" href="">Pilares</a>
+        <a id="nav-opt" href="">Informações</a>
+        <a id="nav-opt" href="">Inscrições</a>
+        <a id="nav-opt" href="">Patrocinadores</a>
+      </nav>
+    </div>
+    <div><img id="img-header" src="./src/img/logo.png" alt="" srcset=""></div>
+  </header>
+  <main>
+    <section id="conteiner1">
+      <div>
+        <h2> Objetivo</h2><br>
+        <ul>
+          <li>Acolher os cristãos convencidos - mas, muitas vezes não verdadeiramente convertidos ao Evangelho.</li>
+          <li>Aprofundar o conhecimento acerca da Verdade, motivando o estudo bíblico, a compreensão da teologia da nossa Igreja e a prática verdadeira do envio missionário.</li>
+          <li>Aperfeiçoar o amor e a devoção Mariana, a fim de com e como Ela, desenvolver uma espera confiante e ativa às Promessas de Cristo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="conteiner2">
+      <div class="pilares">
+        <h3>Sofrimento</h3>
+        <p>Diagnóstico de qual é essa dor. De onde que o calo aperta. Qual a raiz do problema?ovado do Primeiro Amor, entendem e desejam seguir no conhecimento da Verdade, que só se consolida com o Envio.</p>
+      </div>
+      <div class="pilares">
+        <h3>Paciência</h3>
+        <p>Antes da Ressurreição, é preciso morrer. Como aguardamos os três dias até a pedra rolar?</p>
+      </div>
+      <div class="pilares">
+        <h3>Fidelidade</h3>
+        <p>O Amor precisa estar à serviço do tempo. Fidelidade é aliança, compromisso, voto de permanência.</p>
+      </div>
+      <div class="pilares">
+        <h3>Esperança</h3>
+        <p>Ato de ousadia! Esperar com e como Maria o cumprimento daquilo que Deus nos deu visão.</p>
+      </div>
+    </section>
+
+    <section id="conteiner3">
+      <div class="about">
+        <div class="point"></div>
+        <h3>Quando</h3>
+        <p>26, 27 e 28 de maio</p>
+      </div>
+      <div class="about">
+        <div class="point"></div>
+        <h3>Local</h3>
+        <p>Fundação Senhor dos Passos (Dedezão)</p>
+      </div>
+      <div class="about">
+        <div class="point"></div>
+        <h3>Investimento</h3>
+        <p>R$ 120,00</p>
+      </div>
+    </section>
+
+    <section id="form">
+      <h2>Inscrições</h2>
+      <form method="post" action="https://script.google.com/macros/s/AKfycby3bznOIrqTh5YyDWJ9RQtFJVjdCRo98aouaPpzM4_1inc3SKaL2hTEf5EvppzAfNZg/exec">
+      <div id="formId">
+        <div id="info">
+          <label for="firstName">Nome:</label>
+          <input type="text" name="firstName" id="firstName">
+          
+          <label for="lastName">Sobrenome:</label>
+          <input type="text" name="lastName" id="lastName">
+          
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          
+          <label for="tel">Telefone:</label>
+          <input type="tel" name="tel" id="tel" maxlength="11">
+
+          <label for="date">Data de nascimento:</label>
+          <input type="date" name="date" id="date">
+          
+          <label for="name">Sexo:</label>
+            <select name="sexo" id="sexo">
+              <option value="null" selected></option>
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+        </div>
+        <div id="endereco">
+
+          <label for="addres">cep:</label>
+          <input type="text" name="cep" maxlength="8" id="cep">
+
+          <label for="street">Rua:</label>
+          <input type="text" name="street" id="street" disabled>
+
+          <label for="district">Bairro:</label>
+          <input type="text" name="district" id="district" disabled>
+          
+          <label for="city">Cidade:</label>
+          <input type="text" name="city" id="city" disabled>
+          
+          <label for="state">Estado:</label>
+          <input type="text" name="state" id="state" disabled>
+          
+          <label for="number">Número:</label>
+          <input type="text" name="number" id="number">
+          
+        </div>
+      </div>
+      <input type="checkbox" name="agreed" id="agreed">
+      <label for="agreed" class="agreed"> Ciente que os dados serão utilizados exclusivamente para a inscrição do encontro</label>
+      <button type="submit" value="Enviar" id="button" disabled>Enviar</button>
+      </form>
+    </section>
+    
+    <section id="sponsor">
+
+    </section>
+  </main>
+  <footer>
+    <p>© A website developed by Hector. All rights reserved.</p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
