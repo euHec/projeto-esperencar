@@ -1,4 +1,3 @@
-import './style.css';
 import { searchCep } from './cepFunctions';
 
 const agreed = document.querySelector('#agreed');
