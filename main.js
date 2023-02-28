@@ -26,21 +26,15 @@ export const searchCep = async (value) => {
   }
 };
 
-window.addEventListener("load", function() {
-  const form = document.getElementById('formId');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Success!");
-    })
-  });
-});
+const scriptURL = "https://script.google.com/macros/s/AKfycby3bznOIrqTh5YyDWJ9RQtFJVjdCRo98aouaPpzM4_1inc3SKaL2hTEf5EvppzAfNZg/exec";
+const form = document.querySelector('form');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(async response => console.log('Success!', await response.json()))
+    .catch(error => console.error('Error!', error.message))
+})
 
 agreed.addEventListener('change', () => {
   if (agreed.checked === true) {

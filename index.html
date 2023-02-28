@@ -71,7 +71,7 @@
 
     <section id="form">
       <h2>Inscrições</h2>
-      <form method="post" action="https://script.google.com/macros/s/AKfycby3bznOIrqTh5YyDWJ9RQtFJVjdCRo98aouaPpzM4_1inc3SKaL2hTEf5EvppzAfNZg/exec">
+      <form method="post">
       <div id="formId">
         <div id="info">
           <label for="firstName">Nome:</label>
@@ -98,20 +98,20 @@
         </div>
         <div id="endereco">
 
-          <label for="addres">cep:</label>
+          <label for="cep">cep:</label>
           <input type="text" name="cep" maxlength="8" id="cep">
 
           <label for="street">Rua:</label>
-          <input type="text" name="street" id="street" disabled>
+          <input type="text" name="street" id="street">
 
           <label for="district">Bairro:</label>
-          <input type="text" name="district" id="district" disabled>
+          <input type="text" name="bairro" id="district">
           
           <label for="city">Cidade:</label>
-          <input type="text" name="city" id="city" disabled>
+          <input type="text" name="cidade" id="city">
           
           <label for="state">Estado:</label>
-          <input type="text" name="state" id="state" disabled>
+          <input type="text" name="estado" id="state">
           
           <label for="number">Número:</label>
           <input type="text" name="number" id="number">
@@ -120,7 +120,7 @@
       </div>
       <input type="checkbox" name="agreed" id="agreed">
       <label for="agreed" class="agreed"> Ciente que os dados serão utilizados exclusivamente para a inscrição do encontro</label>
-      <button type="submit" value="Enviar" id="button" disabled>Enviar</button>
+      <input type="submit" value="Enviar" id="button" disabled>
       </form>
     </section>
     
