@@ -26,7 +26,7 @@ export const searchCep = async (value) => {
   }
 };
 
-const scriptURL = "script.google.com/macros/s/AKfycby3bznOIrqTh5YyDWJ9RQtFJVjdCRo98aouaPpzM4_1inc3SKaL2hTEf5EvppzAfNZg/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycby3bznOIrqTh5YyDWJ9RQtFJVjdCRo98aouaPpzM4_1inc3SKaL2hTEf5EvppzAfNZg/exec";
 const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
