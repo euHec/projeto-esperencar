@@ -32,8 +32,8 @@ const form = document.querySelector('form');
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(async response => console.log('Success!', await response.json()))
-    .catch(error => console.error('Error!', error.message))
+    .then(async response => alert('Success!', await response.json()))
+    .catch(error => alert('Error!', error.message))
 })
 
 agreed.addEventListener('change', () => {
