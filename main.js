@@ -1,5 +1,5 @@
-import '/src/style.css';
-import { searchCep } from '/src/cepFunctions.js';
+import './style.css';
+import { searchCep } from './cepFunctions';
 
 const agreed = document.querySelector('#agreed');
 const button = document.querySelector('#button');
