@@ -1,5 +1,5 @@
-import './style.css';
-import { searchCep } from './cepFunctions';
+import 'https://euhec.github.io/projeto-esperencar/src/style.css';
+import { searchCep } from 'https://euhec.github.io/projeto-esperencar/src/cepFunctions.js';
 
 const agreed = document.querySelector('#agreed');
 const button = document.querySelector('#button');
