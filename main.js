@@ -1,3 +1,6 @@
+import Swal from 'sweetalert2'
+
+
 const agreed = document.querySelector('#agreed');
 const button = document.querySelector('#button');
 const cep = document.querySelector('#cep');
@@ -32,8 +35,19 @@ const form = document.querySelector('form');
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(async response => alert('Success!', await response.json()))
-    .catch(error => alert('Error!', error.message))
+    .then(async response =>
+      Swal.fire({
+        title: 'Sucesso!',
+        text: 'Inscrição realizada',
+        icon: 'success',
+        confirmButtonText: 'Ok'
+      }, await response.json()))
+    .catch(error => Swal.fire({
+      title: 'Oops...',
+      text: `${error.message}`,
+      icon: 'success',
+      confirmButtonText: 'Ok'
+    }))
 })
 
 agreed.addEventListener('change', () => {
